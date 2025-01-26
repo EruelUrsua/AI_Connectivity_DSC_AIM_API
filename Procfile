@@ -1,1 +1,1 @@
-web: gunicorn risk_factor_outage_API:app --bind 0.0.0.0:$PORT
+web: python risk_factor_outage_API.py
