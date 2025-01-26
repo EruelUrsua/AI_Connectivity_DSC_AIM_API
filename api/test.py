@@ -6,7 +6,7 @@ payload = {
     "Humidity": -70,
     "Precipitation": 1,
     "Signal Strength": -50,
-    "Packet Loss": 10,
+    "Packet Loss": 2,
     "Latency": 5
 }
 response = requests.post(url, json=payload)
