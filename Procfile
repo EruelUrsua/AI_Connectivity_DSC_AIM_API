@@ -1,0 +1,1 @@
+web: gunicorn risk_factor_outage_API:app --bind 0.0.0.0:$PORT
