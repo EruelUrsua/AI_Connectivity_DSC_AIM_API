@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from model_loader import load_model
 from waitress import serve
+import os
 
 
 
@@ -73,5 +74,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    serve(app, host='0.0.0.0', port=port)
+    serve(app, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
